@@ -28,8 +28,6 @@ module.exports = {
   getItemStyle: function(item, checkedValue, activeColor) {
     var padding = item.padding * 10;
     var style = 'padding-left: ' + padding + 'px;';
-
-    // 如果为选中状态，则高亮
     if (item.value === checkedValue) {
       style += 'color: ' + getColor(activeColor);
     }
