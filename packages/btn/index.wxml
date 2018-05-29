@@ -16,6 +16,7 @@
   bindgetuserinfo="bindgetuserinfo"
   bindgetphonenumber="bindgetphonenumber"
   binderror="binderror"
+  bindopensetting="bindopensetting"
 >
   <slot></slot>
 </button>

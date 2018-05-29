@@ -44,6 +44,9 @@ module.exports = Behavior({
     },
     binderror({ detail = {} } = {}) {
       this.triggerEvent('error', detail);
+    },
+    bindopensetting({ detail = {} } = {}) {
+      this.triggerEvent('opensetting', detail);
     }
   }
 });
