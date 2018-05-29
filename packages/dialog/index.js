@@ -44,6 +44,9 @@ Component({
           type: 'cancel'
         });
       }
+    },
+    handleOpenSetting({ detail = {} } = {}) {
+      this.triggerEvent('opensetting', detail);
     }
   }
 });
