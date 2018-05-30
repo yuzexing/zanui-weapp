@@ -2,11 +2,12 @@
   height: 45px;
 }
 .zan-tab__bd {
-  width: 750rpx;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  border-bottom: 1rpx solid #e5e5e5;
+  border: 1rpx solid #2a97e3;
   background: #fff;
+  margin-top:20px;
 }
 .zan-tab__bd--fixed {
   position: fixed;
@@ -16,7 +17,7 @@
 .zan-tab__item {
   flex: 1;
   display: inline-block;
-  padding: 0 5px;
+  padding: 0;
   line-height: 0;
   box-sizing: border-box;
   overflow: hidden;
@@ -34,11 +35,13 @@
   word-break: keep-all;
   font-size: 14px;
   color: #666;
+  width: 100%;
 }
 
 .zan-tab__item--selected .zan-tab__title {
-  color: #f44;
-  border-bottom: 2px solid #f44;
+  color:#fff;
+  border-bottom:none;
+  background:#2a97e3;
 }
 
 .zan-tab__bd--scroll {
