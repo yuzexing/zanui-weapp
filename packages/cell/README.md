@@ -3,31 +3,27 @@
 ### 使用指南
 
 #### 单个 cell 使用示例
-~~~json
+```json
   {
-    ...
     "usingComponents": {
-      "zan-cell": "../../dist/cell/index",
+      "zan-cell": "path/to/zanui-weapp/dist/cell/index",
     }
-    ...
   }
-~~~
+```
 
-~~~wxml
+```wxml
   <zan-cell title="单行列表" label="附加描述" value="详细信息"></zan-cell>
-~~~
+```
 
 #### cell 组使用示例
 多个 cell 组件必须作为 `cell-group` 组件的子组件，否则可能出现显示问题。
 
 ```json
   {
-    ...
     "usingComponents": {
-      "zan-cell": "../../dist/cell/index",
-      "zan-cell-group": "../../dist/cell-group/index"
+      "zan-cell": "path/to/zanui-weapp/dist/cell/index",
+      "zan-cell-group": "path/to/zanui-weapp/dist/cell-group/index"
     }
-    ...
   }
 ```
 
@@ -65,3 +61,8 @@
 | 默认            | 否          | 无   | 左侧除了 `title`，`label` 外的自定义 wxml 内容                              |
 | icon          | 否          | 无   | 标题前自定义的 icon，可使用 `icon` 自定义组件，具体使用参考 icon 组件 |
 | footer          | 否          | 无   | 右侧自定义 wxml 内容，如果设置了 `value` 属性，则不生效 |
+
+### 外部样式类
+| 类名       | 说明      |
+|-----------|-----------|
+| cell-class | 根节点自定义样式类，通过这个可以改变根节点上的样式 |

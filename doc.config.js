@@ -54,10 +54,12 @@ module.exports = {
         base: 'form',
         label: '表单',
         include: {
+          checkbox: require('./packages/checkbox/README.md'),
           field: require('./packages/field/README.md'),
-          switch: require('./packages/switch/README.md'),
+          search: require('./packages/search/README.md'),
           select: require('./packages/select/README.md'),
-          stepper: require('./packages/stepper/README.md')
+          stepper: require('./packages/stepper/README.md'),
+          switch: require('./packages/switch/README.md')
         }
       },
       {
@@ -84,6 +86,11 @@ module.exports = {
           toptips: require('./packages/toptips/README.md'),
           loadmore: require('./packages/loadmore/README.md')
         }
+      },
+      {
+        base: 'complexComponent',
+        label: '高阶组件',
+        include: { tree_select: require('./packages/tree-select/README.md') }
       }
     ],
     include: {}
